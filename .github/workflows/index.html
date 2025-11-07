@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Sammangz matches digit 4 bot</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deriv DigitMatch Auto Bot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Deriv DIGIT MATCH Auto Bot</h1>
+      <p class="muted">Listens to ticks and only buys when the last digit equals your selected signal.</p>
+    </header>
+
+    <section class="controls">
+      <div class="row">
+        <label>WebSocket App ID (use 1089 for testing):</label>
+        <input id="appId" type="text" value="1089" />
+      </div>
+
+      <div class="row">
+        <label>Optional API token (for account buys):</label>
+        <input id="apiToken" type="password" placeholder="Paste token for buy/authorize (optional)" />
+      </div>
+
+      <div class="row">
+        <label>Symbol (e.g. R_100, R_50, R_25):</label>
+        <input id="symbol" type="text" value="R_100" />
+      </div>
+
+      <div class="row">
+        <label>Stake (currency unit):</label>
+        <input id="stake" type="number" step="0.01" value="1" />
+      </div>
+
+      <div class="row">
+        <label>Signal (digit 0–9):</label>
+        <select id="signal">
+          <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option>
+          <option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option>
+          <option value="8">8</option><option value="9">9</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>Contract Duration (ticks):</label>
+        <input id="duration" type="number" min="1" value="1" />
+      </div>
+
+      <div class="row buttons">
+        <button id="connectBtn">Connect</button>
+        <button id="toggleAutoBtn" class="disabled">Start Auto-Trade</button>
+        <button id="buyNowBtn">Buy Now (manual)</button>
+      </div>
+
+      <div class="row small">
+        <input id="logToConsole" type="checkbox" /> <label for="logToConsole">Verbose console logging</label>
+      </div>
+    </section>
+
+    <section class="status">
+      <h2>Status</h2>
+      <div id="statusText">Not connected</div>
+      <div class="stream">
+        <h3>Latest Tick</h3>
+        <div id="latestTick">—</div>
+        <h3>Log</h3>
+        <pre id="log"></pre>
+      </div>
+    </section>
+
+    <footer>
+      <small>Built for testing/demo. Replace token/app_id before using real account. Trading carries risk.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
